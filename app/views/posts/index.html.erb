@@ -1,15 +1,9 @@
-<% post1= "今日からProgateでRailsの勉強するよー！" %>
-<% post2= "投稿一覧ページ作成中！" %>
-
 <div class="main posts-index">
   <div class="container">
-    <%# @posts.each do |post| %>
+    <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= post1 %>
+        <%= post %>
       </div>
-      <div class="posts-index-item">
-        <%= post2 %>
-      </div>
-    <%# end %>
+    <% end %>
   </div>
 </div>
